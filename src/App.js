@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Subsription from './components/subscription/Subscription';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <Subsription passedDate={new Date()} subscriptionType={"Monthly Package"} amount={12000} />
+          <Subsription passedDate={new Date()} subscriptionType={"Annual Package"} amount={300000} />
       </header>
+
     </div>
   );
 }

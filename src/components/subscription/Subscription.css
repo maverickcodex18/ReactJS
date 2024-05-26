@@ -1,0 +1,23 @@
+.form{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    column-gap: 2%;
+    background-color: black;
+    width: 80%;
+    margin: .5%;
+}
+.type{
+    align-self:baseline;
+    justify-self: center;
+}
+.amountWrapper{
+    background-color:brown;
+    border-radius: 12px;
+    border:solid 2px rgb(149, 134, 115);
+    font-size: 100%;
+    margin:5%;
+}
+.amount{
+    align-self: center;
+    justify-self: center;
+}
